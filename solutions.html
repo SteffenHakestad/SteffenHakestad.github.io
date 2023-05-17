@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="main.js" defer></script> -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="#">
+    <link rel="icon" href="Images\SDCU-Logo.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mitr:wght@400;500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDCU - Solutions</title>
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <script>
+        $(function() {
+          $("#navbar-placeholder").load("navbar.html");
+        });
+      </script>
+          <div id="multi-page-header-container">
+            <h1>Solutions</h1>
+            <div id="multi-page-header-divider"></div>
+            <p>Our Innovative <strong>Dynamic Desander System </strong>(DDS™) can be seamlessly integrated into any production or invervention application.<br>With autonomous functionality and remove operation capabillity we deliver NEXT GENERATION solutions</p>
+        </div>
+    <div id="solutions-page-container">
+        <button class="solutions-page-button" onclick="window.location.href='concept.html'">
+            <div class="solutions-page-wrapper">
+              <a>THE CONCEPT</a>
+              <img src="Images\CaseHistory1.jpg" alt="Concept">
+            </div>
+        </button>
+        <button class="solutions-page-button"onclick="window.location.href='intervention.html'">
+            <div class="solutions-page-wrapper">
+              <a>INTERVENTION</a>
+              <img src="Images\CaseHistory2.jpg" alt="Intervention">
+            </div>
+        </button>
+        <button class="solutions-page-button" onclick="window.location.href='production.html'">
+            <div class="solutions-page-wrapper">
+              <a>PRODUCTION</a>
+              <img src="Images\CaseHistory3.jpg" alt="Production">
+            </div>
+        </button>
+        <button class="solutions-page-button" onclick="window.location.href='case-studies.html'">
+            <div class="solutions-page-wrapper">
+              <a>CASE STUDIES</a>
+              <img src="Images\CaseHistory4.jpg" alt="Case Studies">
+            </div>
+        </button>
+        <button class="solutions-page-button" onclick="window.location.href='faq.html'">
+            <div class="solutions-page-wrapper">
+              <a>FAQ</a>
+              <img src="Images\CaseHistory5.jpeg" alt="FAQ">
+            </div>
+        </button>
+    </div>
+    <div id="footer-placeholder"></div>
+    <script>
+        $(function() {
+        $("#footer-placeholder").load("footer.html");
+        });
+    </script>
+</body>
+</html>

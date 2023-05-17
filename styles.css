@@ -1,0 +1,1581 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mitr', sans-serif;
+}
+body{
+    background-color: white;
+    
+}
+
+/*START OF MULTI PAGE ELEMENTS/*
+/*NAVBAR, HEADER AND FOOTER*/
+/*Start of Navbar*/
+#navbar {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 5rem 0rem 0rem;
+    background-image: url("Images/Banner.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    color: white;
+    background-color: white;
+    font-family: 'Titillium Web', sans-serif;
+    max-height: 7rem;
+    min-height: 4rem;
+    height: 7rem;
+    transition: height 0.3s ease-in-out;
+    border-bottom: solid #2c4c9c 1px;
+}
+#navbar-logo-container{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+#logo-image{
+    width: 6rem;
+    transition: width 0.3s ease-in-out;
+}
+#title-container{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+#brand-title{
+    display: inline-block;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 3rem;
+    color: #2c4c9c;
+    line-height: 1;
+    transition: font-size 0.3s ease-in-out;
+}
+#brand-title-subtext{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1rem;
+    color: #2c4c9c;
+    transition: font-size 0.3s ease-in-out;
+    line-height: 1;
+}
+.navbar-links ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+}
+.navbar-links li{
+    list-style: none;
+    position: relative;
+}
+.navbar-links li a{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: #2c4c9c;
+    cursor: pointer;
+    padding: 1rem;
+    display: block;
+    text-shadow: 0px 0px 5px rgb(255, 255, 255);
+}
+.navbar-links li a:hover{
+    color: #fdc613;
+}
+#toggle-button{
+    cursor: pointer;
+    position: absolute;
+    top: 35%;
+    right: 2rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.bar{
+    background-color: #2c4c9c;
+    height: 3px;
+    width: 100%;
+    border-radius: 10px;
+}
+#mobile-links{
+    display: none;
+    background-color: #fdc613;
+    position: fixed;
+    top: 7rem;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    transition: top 0.3s ease-in-out;
+    
+}
+#mobile-links li{
+    list-style: none;
+}
+#mobile-links a{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #2c4c9c;
+    padding: 0rem 1rem 0rem 1rem;
+    
+}
+#mobile-links a:hover{
+    color: red;
+}
+@media (max-width: 1000px){
+    /* #navbar-logo-container{
+        margin-top: .5rem;
+    }
+    
+    #logo-image{
+        width: 6rem;
+    }
+    .brand-title{
+        font-size: 2.5rem;
+    } */
+    #toggle-button{
+        display: flex;
+    }
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+    #navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        border-bottom: none;
+    }
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links ul li{
+        text-align: center;  
+    }
+}
+@media (max-width: 800px){
+    #navbar{
+        background-image: none;
+        background-color: #fdc613;
+    }
+
+}
+
+
+/*Start of Multi Page header*/
+#multi-page-header-container{
+    background-color: #2c4c9c;
+    color: white;
+    width: 100%;
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 10rem 15rem 5rem 10rem;
+
+}
+#multi-page-header-container h1{
+    font-family: 'Titillium Web', sans-serif;
+} 
+#multi-page-header-container p {
+    font-family: 'Raleway', sans-serif;
+    padding: 0rem 50rem 0rem 0rem;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+#multi-page-header-divider{
+    width: 100%;
+    height: .1rem;
+    background-color: white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+@media (max-width: 1500px){
+    #multi-page-header-container{
+        padding: 8rem 5rem 5rem 5rem;
+        font-size: 1.5rem;
+    }
+    #multi-page-header-container p {
+        padding: 0;
+    
+    }
+}
+@media (max-width: 600px){
+    #multi-page-header-container{
+        padding: 8rem 2rem 5rem 2rem;
+        font-size: 1.2rem;
+    }
+    #multi-page-header-container p {
+        padding: 0;
+    
+    }
+}
+@media (max-width: 300px){
+    #multi-page-header-container{
+        padding: 8rem 1rem 1rem 1rem;
+        font-size: 1rem;
+    }
+    #multi-page-header-container p {
+        padding: 0;
+    
+    }
+}
+/*End of Multi Page header*/
+
+
+/* Start of Footer.*/
+#contact-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: #fdc613;
+    padding: 3rem 20rem 3rem 20rem;
+}
+@media (max-width: 600px){
+    #contact-container{
+        padding: 0rem 1rem 0rem 1rem;
+    }
+}
+#contact-container p{
+    font-size: 2rem;
+}
+#contact-divider{
+    background-color: #2c4c9c;
+    width: 100%;
+    height: .1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+#contact-inner-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    min-width: 16rem;
+}
+@media (max-width: 600px){
+    #contact-inner-container p{
+        font-size: 1.5rem;
+    }
+}
+
+#email-text{
+    text-decoration: none;
+    color: #2c4c9c;
+}
+
+.blue-text{
+    color: #2c4c9c;
+}
+.light{
+    font-family: 'Titillium Web', sans-serif;
+}
+#footer-spacer{
+    height: 1rem;
+}
+/* End of Footer. */
+
+
+
+/*START OF HOME PAGE*/
+/* Start of image slider. Home page*/
+#slide-container{
+    overflow: hidden;
+    position: relative;
+    padding-top: 110px;
+    max-height: 55rem;
+}
+.slides{
+    width: 500%;
+    display: flex;
+    max-height: 55rem;
+    
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 20%;
+    transition: 1s;
+}
+.slide img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: all 5s;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+
+
+.navigation-manual{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 45rem;
+    z-index: 5;
+}
+.manual-btn{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer; 
+}
+.manual-btn:not(:last-child){
+    margin-right: 1rem;
+}
+.manual-btn:hover{
+    background: #4164bd;
+    transition: .5s;
+}
+
+
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 45rem;
+    z-index: 4;
+}
+.navigation-auto div{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    transition: .5s;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 1rem;
+}
+
+
+
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #4164bd;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #4164bd;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #4164bd;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #4164bd;
+}
+
+@media (max-width: 600px){
+    .navigation-manual{
+        margin-top: 12rem;
+    }
+    .navigation-auto{
+        margin-top: 12rem;
+    }
+}
+/* 
+@media (max-width: 800px){
+    .navigation-manual{
+        margin-top: 26rem;
+    }
+    .navigation-auto{
+        margin-top: 26rem;
+    }
+}
+@media (max-width: 1000px){
+    .navigation-manual{
+        margin-top: 32rem;
+    }
+    .navigation-auto{
+        margin-top: 32rem;
+    }
+}
+@media (max-width: 1300px){
+    .navigation-manual{
+        margin-top: 40rem;
+    }
+    .navigation-auto{
+        margin-top: 40rem;
+    }
+} */
+
+
+/* End of image slider. Home page*/
+
+
+/* Start of "About us. Home page */
+#about-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background: linear-gradient(45deg, transparent 49%, #fdc6131a 49% 51%, transparent 51%) , linear-gradient(-45deg, transparent 49%, #fdc61317 49% 51%, transparent 51%);
+    background-size: 4em 4em;
+    background-color: rgb(255, 255, 255);  
+}
+.about-text{
+    font-family: 'Raleway', sans-serif;
+    color: #2c4c9c;
+    text-align: center;
+    margin: 1rem;
+}
+.about-h3{
+    margin: 0;
+}
+.about-p1, .about-p2{
+    margin-left: 4rem;
+    margin-right: 4rem;
+    width: 50rem;
+    color: black;
+    font-size: 1.2rem;
+    font-family: 'Titillium Web', sans-serif;
+}
+@media (max-width: 600px){
+    .about-p1, .about-p2{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        font-size: .9rem;
+        width: auto;
+    }
+}
+#about-divider{
+    background-color: #2c4c9c;
+    width: 10%;
+    height: .1rem;
+    margin-bottom: 1rem;
+}
+/* End of "About us. Home page */
+
+/* Start of QNA. Home page */
+#qa-container{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: #2c4c9c;
+    padding: 5rem 5rem 1rem 5rem;
+}
+@media (max-width: 600px){
+    #qa-container{
+        padding: 1rem 0rem 1rem 0rem;
+    }
+}
+@media only screen and (min-width: 1921px) {
+    #qa-container{
+        padding: 5rem 20rem 5rem 20rem;
+    }
+}
+@media only screen and (min-width: 3000px) {
+    #qa-container{
+        padding: 5rem 55rem 5rem 55rem;
+    }
+}
+#qa-inner-container{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    max-width: 70rem;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+.q-container,
+.a-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    color: #2c4c9c;
+    padding: 1.5rem;
+    font-size: 1.25rem;
+    height: auto;
+    width: 30%;
+    margin: .5rem;
+    border-radius: 10px;
+}
+.a-container{
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 1.1rem;
+}
+@media (max-width: 600px){
+    .q-container,
+    .a-container{
+        padding: .5rem;
+        width: 35%;
+        font-size: .80rem;
+    }
+}
+.qa-spacer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 15%;
+    margin: 0;
+}
+#customer-divider{
+    background-color: white;
+    width: 50%;
+    height: .1rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+#dds-img{
+    display: block;
+    margin-left: auto;
+    max-width: 416px;
+    max-height: 791px;
+    width: auto;
+    height: auto;
+}
+@media (max-width: 1000px) {
+    #dds-img{
+        display: none;
+    }
+}
+#customer-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 0rem 2rem 0rem 2rem;
+    
+}
+#customer-container p{
+    color: white;
+    font-size: 1.25rem;
+    
+}
+@media (max-width: 600px){
+    #customer-container p{
+        font-size: .9rem;
+        padding: 0rem .5rem 0rem .5rem;
+    }
+}
+/* End of QNA. Home page */
+
+
+/* Start of "Why choose us?". Home page */
+#benefits-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    padding: 2rem 5rem 1rem 5rem;
+    background-color: white;
+}
+@media (max-width: 600px) {
+    #benefits-container{
+        padding: 3rem 1rem 3rem 1rem;
+    }
+}
+#benefits-title-container{
+    width: 100%;
+    overflow: auto;
+    text-align: center;
+    height: auto;
+    color: #2c4c9c;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+}
+#benefits-divider{
+    background-color: #2c4c9c;
+    width: 100%;
+    height: .1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+#statement-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.benefits-title{
+    color: #2c4c9c;
+    font-size: 1.5rem;
+    margin: 0rem 0rem 1rem 0rem;
+}
+.benefits-example{
+    flex-wrap: wrap;
+    width: 33%;
+    text-align: center;
+    height: 100%;
+    padding: 0rem 0rem 0rem 0rem;
+    max-width: 40rem;
+    min-width: 20rem;
+    max-height: 30rem;
+    min-height: 26rem;
+}
+.benefits-image{
+    width: 10rem;
+    margin: 2rem;
+}
+/* End of "Why choose us?". Home page */
+
+
+
+/* Start of Partners. Home page */
+#partners-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: whitesmoke;
+    height: auto;
+    padding: 3rem 5rem 3rem 5rem;
+}
+.partner-link{
+    width: fit-content;
+    height: fit-content;
+    background-color: white;
+    border: 2px solid #2c4c9c;
+    border-radius: 10px;
+    padding: .2rem;
+    margin: 1rem;
+}
+.partner-link img{
+    max-width: 170px;
+    max-height: 150px;
+}
+@media (max-width: 600px) {
+    #partners-container{
+        padding: 3rem 0rem 3rem 0rem;
+    }
+    .partner-link img{
+        max-width: 120px;
+        max-height: 100px;
+    }
+}
+
+/* End of Partners. Home page */
+/*END OF HOME PAGE*/
+
+
+/*START OF Solutions PAGE*/
+/*Start of Solutions container Solutions PAGE*/
+#solutions-page-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 3rem 10rem 3rem 10rem;
+}
+/*End of Solutions container*/
+/*Start of Solutions button*/
+.solutions-page-button{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    width: 35rem;
+    min-width: 30rem;
+    height: 20rem;
+    border-radius: 1rem;
+    border: none;
+    overflow: hidden;
+    margin: 2rem;
+}
+.solutions-page-wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+}
+.solutions-page-wrapper a{
+    position: absolute;
+    bottom: 40%;
+    left: 0;
+    margin-left: 2rem;
+    text-align: left;
+    font-size: 3rem;
+    color: white;
+    z-index: 2;
+    text-shadow: #474747 3px 3px 2px;
+}
+.solutions-page-wrapper img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    transform: scale(1);
+    transition: all .5s;
+    z-index: 1;
+    filter: blur(0px);
+  }
+.solutions-page-button:hover .solutions-page-wrapper img{
+    transform: scale(1.2);
+    filter: blur(4px);
+}
+
+
+@media (max-width: 600px){
+    .solutions-page-button{
+        min-width: 25rem;
+        margin: 0rem 0rem 2rem 0rem;
+        height: 15rem;
+    }
+    #solutions-page-container{
+        padding: 3rem 1rem 3rem 1rem;
+    }
+    .solutions-page-wrapper a{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 400px){
+    .solutions-page-button{
+        min-width: 20rem;
+        height: 10rem;
+        margin: 0rem 0rem 2rem 0rem;
+    }
+    .solutions-page-wrapper a{
+        font-size: 1.5rem;
+    }
+}
+/*End of Solutions button*/
+/*END OF Solutions PAGE*/
+
+
+/*Start of The concept page.*/
+/*Start of The concept wrapper. THE CONCEPT PAGE.*/
+#concept-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0rem 15rem 0rem 15rem;
+}
+/*End of The concept wrapper. THE CONCEPT PAGE.*/
+
+
+
+/*Start of The concept text container. THE CONCEPT PAGE.*/
+#concept-text-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    flex-wrap: wrap;
+    width: 100%;   
+    border-bottom: solid 1px #2c4c9c;
+
+    
+}
+#concept-text-container h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+#concept-text-container p{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+#concept-wrapper img{
+    border-radius: 1rem;
+    margin: 1rem;
+    max-width: 640px;
+    max-height: 600px;
+    min-width: 340px;
+    min-height: 300px;
+}
+/*End of The concept text container. THE CONCEPT PAGE.*/
+
+/*Start of The concept video container. THE CONCEPT PAGE.*/
+#video-container{
+    display: flex;
+    justify-content: center;
+    padding: 0rem 1rem 0rem 1.5rem;
+    width: auto;
+    height: auto;
+    filter: drop-shadow(0px 0px 10px #2c4c9c);
+    border-radius: 1rem;
+    background-color: white;
+    margin: 2rem 40rem 2rem 40rem;
+}
+/*End of The concept video container. THE CONCEPT PAGE.*/
+@media (max-width: 1000px){
+    #concept-wrapper{
+        padding: 0rem 5rem 0rem 5rem;
+    }
+    #concept-text-container h3{
+        font-size: 1.2rem;
+    }
+    #concept-text-container p{
+        font-size: 1rem;
+    }
+    #concept-wrapper img{
+        margin: 1rem;
+    }
+    #video-container{
+        width: 600px;
+        margin: 1rem 20rem 1rem 20rem;
+    }
+}
+@media (max-width: 600px){
+    #video-container{
+        width: 500px;
+        padding: 0rem;
+        margin: .5rem 5rem .5rem 5rem;
+    }
+}
+@media (max-width: 400px){
+    #concept-wrapper{
+        padding: 0rem 1rem 0rem 1rem;
+    }
+    #concept-text-container h3{
+        font-size: 1rem;
+    }
+    #concept-text-container p{
+        font-size: .8rem;
+    }
+    #concept-wrapper img{
+        margin: .5rem;
+    }
+    #video-container{
+        width: 400px;
+        
+        padding: 0rem;
+    }
+}
+@media (max-width: 300px){
+    #video-container{
+        width: 300px;
+        padding: 0rem;
+        margin: 0rem;
+    }
+}
+
+
+/*END OF THE CONCEPT PAGE*/
+
+/*Start of Intervention page.*/
+/*Start of Intervention wrapper. INTERVENTION PAGE.*/
+#intervention-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0rem 15rem 0rem 15rem;
+}
+#intervention-wrapper img{
+    margin: 1rem;
+    border-radius: 1rem;
+    height: auto;
+    width: auto;
+    max-width: 640px;
+    max-height: 600px;
+    min-width: 300px;
+    min-height: 260px;
+}
+/*End of Intervention wrapper. INTERVENTION PAGE.*/
+
+
+/*Start of Intervention Text Container. INTERVENTION PAGE.*/
+#intervention-text-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    flex-wrap: wrap;
+    width: 100%;   
+    border-bottom: solid 1px #2c4c9c;
+}
+#intervention-text-container h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+#intervention-text-container p{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+/*End of Intervention Text Container. INTERVENTION PAGE.*/
+
+@media (max-width: 1000px){
+    #intervention-wrapper{
+        padding: 0rem 5rem 0rem 5rem;
+
+    }
+    #intervention-text-container h3{
+        font-size: 1.2rem;
+    }
+    #intervention-text-container p{
+        font-size: 1rem;
+    }
+    #intervention-wrapper img{
+        margin: 1rem;
+    }
+}
+@media (max-width: 400px){
+    #intervention-wrapper{
+        padding: 0rem 1rem 0rem 1rem;
+    }
+    #intervention-text-container h3{
+        font-size: 1rem;
+    }
+    #intervention-text-container p{
+        font-size: .8rem;
+    }
+    #intervention-wrapper img{
+        margin: .5rem;
+    }
+}
+
+
+/*PRODUCTION TIME TO GO HOME FIX THIS*/
+
+#production-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0rem 15rem 0rem 15rem;
+}
+#production-wrapper img{
+    margin: 2rem;
+    border-radius: 1rem;
+    max-width: 1200px;
+    min-width: 300px;
+}
+
+#production-text-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    flex-wrap: wrap;
+    width: 100%;   
+    border-bottom: solid 1px #2c4c9c;
+}
+#production-text-container h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+#production-text-container p{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+.blue-line-top{
+    border-top: solid 1px #2c4c9c;
+    padding-top: 2rem;
+}
+
+
+
+@media (max-width: 1000px){
+    #production-wrapper{
+        padding: 0rem 5rem 0rem 5rem;
+
+    }
+    #production-text-container h3{
+        font-size: 1.2rem;
+    }
+    #production-text-container p{
+        font-size: 1rem;
+    }
+    #production-wrapper img{
+        margin: 1rem;
+    }
+}
+@media (max-width: 400px){
+    #production-wrapper{
+        padding: 0rem 1rem 0rem 1rem;
+    }
+    #production-text-container h3{
+        font-size: 1rem;
+    }
+    #production-text-container p{
+        font-size: .8rem;
+    }
+    #production-wrapper img{
+        margin: .5rem;
+    }
+}
+/*Start of FAQ Page*/
+/*Start of FAQ Container*/
+.faq-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    flex-wrap: wrap;
+    width: 80%;
+    border-bottom: solid 1px #2c4c9c;
+    margin: 0rem 10rem 0rem 10rem;
+    
+}
+.faq-container h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+.faq-container p{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 1000px){
+    .faq-container{
+        margin: 0rem 5rem 0rem 5rem;
+
+    }
+    .faq-container h3{
+        font-size: 1.3rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .faq-container p{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+@media (max-width: 400px){
+    .faq-container{
+        margin: 0rem 1rem 0rem 1rem;
+
+    }
+    .faq-container h3{
+        font-size: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .faq-container p{
+        font-size: .7rem;
+        margin-bottom: 1rem;
+    }
+}
+
+
+/*End of FAQ Container*/
+
+/*End of FAQ Page*/
+
+
+/*START OF CASE STUDIES PAGE*/
+/*Start of Case history container. Case Studies Page*/
+#case-history-page-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 3rem 5rem 3rem 5rem;
+}
+#case-history-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+@media (max-width: 800px){
+    #case-history-page-container{
+        padding: 1rem;
+    }
+}
+
+/*End of Case history container. Case Studies Page*/
+/*Start of Case history button. Case Studies Page*/
+.case-history-button{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    width: 30%;
+    max-width: 600px;
+    height: 25rem;
+    border-radius: 1rem;
+    border: none;
+    overflow: hidden;
+    margin: 3rem 3rem 0rem 0rem;
+}
+.case-history-wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+}
+.case-history-wrapper a{
+    position: absolute;
+    bottom: 40%;
+    left: 15%;
+    font-size: 2.5rem;
+    color: white;
+    z-index: 2;
+    text-shadow: #474747 3px 3px 2px;
+    transition: all .5s;
+}
+.case-history-wrapper img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    transform: scale(1);
+    transition: all .5s;
+    z-index: 1;
+    filter: blur(0px);
+    max-width: 800px;
+  }
+.case-history-button:hover .case-history-wrapper img{
+    transform: scale(1.2);
+    filter: blur(4px);
+}
+/* .case-history-button:hover .case-history-wrapper a{
+    left: 20%;  
+} */
+@media (max-width: 800px){
+    .case-history-button{
+        height: 20rem;
+        width: 100%;
+        margin: 0rem 0rem 2rem 0rem;
+    }
+    .case-history-wrapper a{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 600px){
+    .case-history-button{
+        height: 15rem;
+        margin-bottom: 1rem;
+    }
+    .case-history-wrapper a{
+        font-size: 1.8rem;
+    }
+}
+@media (max-width: 300px){
+    .case-history-button{
+        height: 10rem;
+    }
+    .case-history-wrapper a{
+        font-size: 1.5rem;
+    }
+}
+
+/*End of Case history button. Case Studies Page*/
+/*End of Case History Page.*/
+
+/*Start of Case History # Page*/
+
+#case-study-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+}
+
+
+#case-study-top-img-container{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 2rem 0rem 2rem;
+}
+#case-study-top-img-container img{
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 1rem;
+    
+}
+#case-study-outer-text-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0rem 20rem 0rem 20rem;
+
+}
+.case-study-text-container{
+    display: flex;
+    align-items: center;
+}
+#case-study-outer-text-container h3{
+    font-family: 'Titillium Web', sans-serif;
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+    font-size: 1.5rem;
+}
+.case-study-text-container p{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.3rem;
+}
+.case-study-text-container img{
+    margin-right: 5px;
+    padding: 0;
+}
+@media (max-width: 1000px){
+    #case-study-outer-text-container{
+        padding: 0rem 5rem 0rem 5rem;
+    }
+    #case-study-outer-text-container h3{
+        font-size: 1.2rem;
+    }
+    .case-study-text-container p{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 600px){
+    #case-study-outer-text-container{
+        padding: 0rem 1rem 0rem 1rem;
+    }
+    #case-study-outer-text-container h3{
+        font-size: 1rem;
+    }
+    .case-study-text-container p{
+        font-size: .8rem;
+    }
+    #case-study-top-img-container{
+    margin: 1rem 1rem 0rem 1rem;
+    }
+}
+
+/*Start of Case Study Table*/
+#table-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+#center-table-header{
+    text-align: center;
+}
+#table-container table{
+    border-collapse: collapse;
+    border: 3px solid #2c4c9c;
+    border-radius: 1rem;
+    padding: .5rem;
+    
+}
+#table-container table tr{
+    width: 50%;
+}
+#table-container table td{
+    font-family: 'Titillium Web', sans-serif;
+    margin: 0;
+    border: 1px solid black;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+/*End of Case Study Table*/
+/*Start of Download PDF button*/
+#pdf-btn{
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin: .5rem;
+    width: auto;
+    color: white;
+    background-color: #2c4c9c;
+    border: none;
+    border-radius: .3rem;
+    transition: background-color .2s;
+}
+#pdf-btn img{
+    margin-right: .3rem;
+}
+#pdf-btn img:last-child{
+    display: none;
+}
+#pdf-btn:hover img:first-child{
+    display: none;
+}
+#pdf-btn:hover img:last-child{
+    display: inline-block;
+}
+#pdf-btn:hover{
+    background-color: #fdc613;
+    color: #2c4c9c;
+}
+/*End of Download PDF button*/
+/*Start of "More Case Studies*/
+#more-case-studies-container{
+    border-top: 1px solid #2c4c9c;
+    margin-top: 2rem;
+    padding: 0;
+}
+
+#more-case-studies-inner-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+/* @media (max-width: 300px){
+    #more-case-studies-container{
+        padding: 1rem 0rem 0rem 0rem;
+    }
+    #more-case-studies-inner-container{
+        padding: 0rem 0rem 0rem 0rem;
+    }
+} */
+/*Start of "More Case Studies buttons*/
+.more-case-history-button{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    width: 20rem;
+    min-width: 20rem;
+    height: 15rem;
+    border-radius: 1rem;
+    border: none;
+    overflow: hidden;
+    margin: 1rem 1rem 1rem 1rem;
+}
+.more-case-history-btn-wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+}
+.more-case-history-btn-wrapper a{
+    position: absolute;
+    bottom: 40%;
+    margin-left: 2.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    z-index: 2;
+    text-shadow: #474747 3px 3px 2px;
+    transition: all .5s;
+}
+.more-case-history-btn-wrapper img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    transform: scale(1);
+    transition: all .5s;
+    z-index: 1;
+    filter: blur(0px);
+    max-width: 800px;
+  }
+.more-case-history-button:hover .more-case-history-btn-wrapper img{
+    transform: scale(1.2);
+    filter: blur(4px);
+}
+@media (max-width: 800px){
+    .more-case-history-button{
+        height: 20rem;
+        margin-bottom: 2rem;
+    }
+    .more-case-history-btn-wrapper a{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 600px){
+    .more-case-history-button{
+        height: 15rem;
+        margin-bottom: 1rem;
+        width: 10rem;
+    }
+    .more-case-history-btn-wrapper a{
+        font-size: 1.8rem;
+    }
+}
+@media (max-width: 300px){
+    .more-case-history-button{
+        height: 10rem;
+        width: 10rem;
+    }
+    .more-case-history-btn-wrapper a{
+        font-size: 1.5rem;
+    }
+}
+/*End of "More Case Studies buttons*/
+/*End of "More Case Studies*/
+/*End of Case History # Page*/
+
+
+
+/*Start of QHSE Page*/
+/*Start of QHSE Main Container. QHSE Page*/
+#qhse-main-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    padding: 3rem 10rem 5rem 10rem;
+    text-align: left;
+}
+#qhse-main-container h3{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+#qhse-main-container p{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: .5rem
+}
+@media (max-width: 1000px){
+    #qhse-main-container{
+        padding: 3rem 1rem 5rem 1rem;
+    }
+    #qhse-main-container h3{
+        font-size: 1.2rem;
+    }
+    #qhse-main-container p{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 600px){
+    #qhse-main-container{
+        padding: 3rem .5rem 5rem .5rem;
+    }
+    #qhse-main-container h3{
+        font-size: 1.1rem;
+    }
+    #qhse-main-container p{
+        font-size: .9rem;
+    }
+}
+/*End of QHSE Main Container. QHSE Page*/
+/*End of QHSE Page*/
+
+/*Start of About Page*/
+/*Start of About Container. About Page*/
+#about-page-container{
+    width: 100%;
+    padding: 3rem 25rem 3rem 25rem;
+}
+
+#about-page-container p{
+    font-family: 'Titillium Web', sans-serif;
+    padding: 0rem 0rem 1.5rem 0rem;
+    font-size: 1.2rem;
+}
+#about-page-title{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    padding: 0rem 0rem 1.5rem 0rem;
+}
+@media (max-width: 1000px){
+    #about-page-container{
+        padding: 3rem 10rem 3rem 10rem;
+    }
+    #about-page-title{
+        font-size: 1rem;
+    }
+    #about-page-container p{
+        font-size: .8rem;
+    }
+}
+@media (max-width: 600px){
+    #about-page-container{
+        padding: 3rem 1rem 3rem 1rem;
+    }
+    #about-page-title{
+        font-size: .9rem;
+    }
+    #about-page-container p{
+        font-size: .7rem;
+    }
+}
+/*End of About Container. About Page*/
+
+/*Start of About Image Container. About Page*/
+.about-page-img-container{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0rem 1rem 0rem;
+    margin: 0rem 0rem 3rem 0rem;
+    border-top: solid #2c4c9c 1px;
+    border-bottom: solid #2c4c9c 1px;
+}
+.about-page-img-container img{
+    width: 100%;
+    max-width: 1200px;
+}
+/*End of About Image Container. About Page*/
+/*End of About Page*/
+
+/*Start of Contact Page*/
+/*Start of Contact Page img container. Contact Page*/
+#contact-img-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#contact-img-wrapper img{
+    width: 100%;
+    max-width: 600px;
+    border-radius: 1rem;
+    margin-right: 1rem;
+}
+#hq-img-wrapper img{
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 1rem;
+    margin-left: 1rem;
+
+}
+@media (max-width: 1000px){
+    #contact-img-container{
+        flex-direction: column;
+        padding: 1rem 1rem 1rem 1rem;
+    }
+}
+/*End of Contact Page img container. Contact Page*/
+/*End of Contact Page*/

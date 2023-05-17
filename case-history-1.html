@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="#">
+    <link rel="icon" href="Images\SDCU-Logo.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mitr:wght@400;500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDCU - Case History 1</title>
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <script>
+        $(function() {
+          $("#navbar-placeholder").load("navbar.html");
+        });
+    </script>
+    <div id="multi-page-header-container">
+        <h1>CASE HISTORY 1</h1>
+        <div id="multi-page-header-divider"></div>
+        <p>Case study for North Sea Operator on Norwegian Platform using 2x Dynamic Desanders including associated equipment such as remote choke, flor back iron and ESD</p>
+    </div>
+    <div id="case-study-wrapper">
+        <div id="case-study-top-img-container">
+            <img src="Images\Oil-Rig-Images\Gullfaks-C-1-img.JPG" alt="Case History 1" id="case-study-top-img">
+        </div>
+        <div id="case-study-outer-text-container">
+            
+            <h3 class="blue-text">Background</h3>
+            <div class="case-study-text-container">
+                <img src="Images\Icons\iconmonstr-arrow-right-lined-24.png" alt="Right Arrow Blue">
+                <p>Production test performed showed that the well had no productivity/injectivity and is therefore completely plugged.</p>
+            </div>
+            <div class="case-study-text-container">
+                <img src="Images\Icons\iconmonstr-arrow-right-lined-24.png" alt="Right Arrow Blue">
+                <p>Clean up needed to continue completion of well.</p>
+            </div>
+
+            <h3 class="blue-text">Solution</h3>
+            <div class="case-study-text-container">
+                <img src="Images\Icons\iconmonstr-arrow-right-lined-24.png" alt="Right Arrow Blue">
+                <p>2 x Dynamic Desanders including associated equipment such as remote choke, flow back iron and ESD.</p>
+            </div>
+            <div class="case-study-text-container">
+                <img src="Images\Icons\iconmonstr-arrow-right-lined-24.png" alt="Right Arrow Blue">
+                <p>Cooperated with Coiled Tubing (CT).</p>
+            </div>
+
+            <h3 class="blue-text">Challenges</h3>
+            <div class="case-study-text-container">
+                <img src="Images\Icons\iconmonstr-arrow-right-lined-24.png" alt="Right Arrow Blue">
+                <p>Large amount of scale and solids.</p>
+            </div>
+
+            <h3 class="blue-text">Results</h3>
+            <div class="case-study-text-container">
+                <img src="Images\Icons\iconmonstr-arrow-right-lined-24.png" alt="Right Arrow Blue">
+                <p>Significantly reduced the amount of sand and scale in well.</p>
+            </div>
+            <div class="case-study-text-container">
+                <img src="Images\Icons\iconmonstr-arrow-right-lined-24.png" alt="Right Arrow Blue">
+                <p>Total of 11 813 kg of solids were recovered.</p>
+            </div>
+            <div class="case-study-text-container">
+                <img src="Images\Icons\iconmonstr-arrow-right-lined-24.png" alt="Right Arrow Blue">
+                <p>Well was treated continuously and separated sand without any interruption of well flow.</p>
+            </div>
+            <div class="case-study-text-container">
+                <img src="Images\Icons\iconmonstr-arrow-right-lined-24.png" alt="Right Arrow Blue">
+                <p>Completed the operation with no HSE incidents</p>
+            </div>
+        </div>
+        <div id="table-container">
+            <table>
+                <tr>
+                    <td id="center-table-header" colspan="2">CASE INFORMATION</td>
+                </tr>
+                <tr>
+                    <td>Client:</td>
+                    <td>North Sea Operator</td>
+                </tr>
+                <tr>
+                    <td>Rig Name:</td>
+                    <td>Norwegian Platform</td>
+                </tr>
+                <tr>
+                    <td>Project Number:</td>
+                    <td>CU1501</td>
+                </tr>
+                <tr>
+                    <td>Well:</td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>Operation Date:</td>
+                    <td>16.05.2015 - 08.07.2015</td>
+                </tr>
+                <tr>
+                    <td>Solids Recovered:</td>
+                    <td>11,813 kg</td>
+                </tr>
+                <tr>
+                    <td>Working Depth:</td>
+                    <td>3285 mMD</td>
+                </tr>
+                <tr>
+                    <td>H2S:</td>
+                    <td>0 PPM</td>
+                </tr>
+                <tr>
+                    <td>Flow:</td>
+                    <td>>903 l/min</td>
+                </tr>
+                <tr>
+                    <td>Wellhead / Upstream Choke Pressure:</td>
+                    <td>>115 bar</td>
+                </tr>
+                <tr>
+                    <td>Downstream Choke Pressure:</td>
+                    <td>>41 bar</td>
+                </tr>
+            </table>
+        </div>
+        <button id="pdf-btn" onclick="downloadPDF(1)"><img src="Images\Icons\pdf-icon-white.png" id="white-pdf"><img src="Images\Icons\pdf-icon-blue.png" id="blue-pdf">OPEN CASE PDF</button>
+        <div id="more-case-studies-container">
+            <p class="blue-text">MORE CASE STUDIES</p>
+            <div id="more-case-studies-inner-container">
+                <!-- <button class="more-case-history-button" onclick="window.location.href='case-history-1.html'">
+                    <div class="more-case-history-wrapper">
+                        <a>Case History One</a>
+                        <img src="Images\ProductImage5.jpg" alt="CaseHistory1">
+                    </div>
+                </button> -->
+                
+                <button class="more-case-history-button" onclick="window.location.href='case-history-2.html'">
+                    <div class="more-case-history-btn-wrapper">
+                        <a>Case History Two</a>
+                        <img src="Images\ProductImage6.jpg" alt="CaseHistory2">
+                    </div>
+                </button>
+
+                <button class="more-case-history-button" onclick="window.location.href='case-history-3.html'">
+                    <div class="more-case-history-btn-wrapper">
+                        <a>Case History Three</a>
+                        <img src="Images\ProductImage7.jpg" alt="CaseHistory3">
+                    </div>
+                </button>
+
+                <button class="more-case-history-button" onclick="window.location.href='case-history-4.html'">
+                    <div class="more-case-history-btn-wrapper">
+                        <a>Case History Four</a>
+                        <img src="Images\ProductImage8.jpg" alt="CaseHistory4">
+                    </div>
+                </button>
+
+                <button class="more-case-history-button" onclick="window.location.href='case-history-5.html'">
+                    <div class="more-case-history-btn-wrapper">
+                        <a>Case History Five</a>
+                        <img src="Images\ProductImage9.jpg" alt="CaseHistory5">
+                    </div>
+                </button>
+
+            </div>
+        </div>
+    
+    </div>
+        <div id="footer-placeholder"></div>
+    <script>
+        $(function() {
+        $("#footer-placeholder").load("footer.html");
+        });
+    </script>
+</body>
+</html>

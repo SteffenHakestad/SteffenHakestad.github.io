@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="#">
+    <link rel="icon" href="Images\SDCU-Logo.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mitr:wght@400;500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDCU - The Sand Management Company</title>
+</head>
+<body onload="startInterval()">
+    <div id="navbar-placeholder"></div>
+    <script>
+        $(function() {
+          $("#navbar-placeholder").load("navbar.html");
+        });
+      </script>
+    <div id="slide-container">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            <div class="slide first">
+                <img src="Images\SlideShowImages\SlideShow1.jpg" alt="Slide 1">
+            </div>
+            <div class="slide">
+                <img src="Images\SlideShowImages\SlideShow2.jpg" alt="Slide 2">
+            </div>
+            <div class="slide">
+                <img src="Images\SlideShowImages\SlideShow3.jpg" alt="Slide 3">
+            </div>
+            <div class="slide">
+                <img src="Images\SlideShowImages\SlideShow4.jpg" alt="Slide 4">
+            </div>
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+
+
+        </div>
+
+    </div>
+    <div id="about-container">
+        <h3 class="about-text about-h3">ABOUT US</h3>
+        <h1 class="about-text about-h1">INCREASE YOUR PRODUCTION</h1>
+        <div id="about-divider"></div>
+        <p class="about-text about-p1">If sand, solids, or particulate production is impairing your true production capabilities, then the novel technologies and game changing solutions can enable you to increase your production, whilst neutralizing your sand, solids, or particulate production challenges at surface</p>
+        <p class="about-text about-p2">With over 13 years of operational experience we have the expertise, knowledge, and certification required to provide complete sand/solids management solutions. Our Innovative Dynamic Desander System (DDS™) requires minimal space, has low rigging/installation time and POB. We will take your Desanding challenges to the next level with our semi or fully autonomous units.</p>
+    </div>
+    <div id="qa-container">
+        <div id="qa-inner-container">
+            <div class="q-container">Do you have challenges with your conventional sand control solution?</div>
+            <div class="qa-spacer">
+                <img src="Images\Icons\Arrow-right-lined-64.png">
+            </div>
+            <div class="a-container">
+                <p>Removal of solids from well flow using our <strong>Dynamic Desander</strong> technology boosts production and simplifies interventions.</p>
+            </div>
+            <div class="q-container">Do you need to handle sand / solids at surface?</div>
+            <div class="qa-spacer">
+                <img src="Images\Icons\Arrow-right-lined-64.png">
+            </div>
+            <div class="a-container">
+                <p>The <strong>Dynamic Desander</strong> technology is standalone, highly automated and provide real-time data on the separated solids (eg. pressure, temp, weights etc)</p>
+            </div>
+            
+            <div id="customer-container">
+                <div id="customer-divider"></div>
+                <p><i class="light">“Putting the Dynamic Desander unit into the core of our sand management concept significantly reduced cost per barrel and at the same time improved efficiency. We have now managed to overcome the shortcomings of conventional solutions thus making the separation more efficient and controllable”</i></p>
+                <p class="light">-SDCU customer</p>
+            </div>
+        </div>
+        <img src="Images\DDS_3D-Image-uai-516x891.png" id="dds-img">
+    </div>
+    <div id="benefits-container">
+        <div id="benefits-title-container">
+            <a>WHY CHOOSE US AS YOUR PREFERRED SUPPLIER?</a>
+            <div id="benefits-divider"></div>
+        </div>
+        <div id="statement-container">
+            <div class="benefits-example">
+                <img src="Images\measurement-solids-experts-uai-258x225.png" class="benefits-image">
+                <h3 class="benefits-title">Continuous Measurement</h3>
+                <p class="benefits-paragraph light">Optimize flow in order to optimize production by better managing solids in the production stream. Separate and remove solids from the production stream and avoid unnecessary load on processing facilities.</p> 
+            </div>
+            <div class="benefits-example">
+                <img src="Images\separation-solids-experts-uai-258x225.png" class="benefits-image">
+                <h3 class="benefits-title">Continuous Separation</h3>
+                <p class="benefits-paragraph light">Understand your solids problem by modelling and simulating in advance, and make sure your models are realistic by measuring, the production stream. <br>Make the best possible use of all available historic data and real-time. Continuous monitor solids separation and removal, even from a remote location.</p> 
+            </div>
+            <div class="benefits-example">
+                <img src="Images\production-solids-experts-uai-258x225.png" class="benefits-image">
+                <h3 class="benefits-title">Continuous Production</h3>
+                <p class="benefits-paragraph light">Optimize well production at the maximum flow rate without the need to shut-in the well or undertake costly interventions.</p> 
+            </div>
+        </div>
+    </div>
+    <div id="partners-container">
+        <a class="partner-link"><img src="Images\partner-images\Equinor-logo 258x145px.png" alt="Equinor link"></a>
+        <a class="partner-link"><img src="Images\partner-images\Schlumberger-logo 258x145px.png" alt="SLB link"></a>
+        <a class="partner-link"><img src="Images\partner-images\Expro-logo 258x145px.png" alt="Expro link"></a>
+        <a class="partner-link"><img src="Images\partner-images\BakerHughes-logo 258x145px.png" alt="Bhge link"></a>
+        <a class="partner-link"><img src="Images\partner-images\Saudi-aramco-logo 258x145.png" alt="Armaco link"></a>
+        <a class="partner-link"><img src="Images\partner-images\Petronas-logo 258x145.png" alt="Petronas link"></a>
+        <a class="partner-link"><img src="Images\partner-images\Bp-logo 258x145px.png" alt="Bp link"></a>
+        <a class="partner-link"><img src="Images\partner-images\WoodGroup-logo258x145px.png" alt="Woodplc link"></a>
+    </div>
+    <div id="footer-placeholder"></div>
+    <script>
+        $(function() {
+          $("#footer-placeholder").load("footer.html");
+        });
+      </script>
+    </div>
+</body>
+</html>
